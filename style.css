@@ -1,0 +1,48 @@
+> Delicious_Junior:
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+nav {
+  background: #1a1a2e;
+  padding: 15px;
+}
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+h1 {
+  color: #1a1a2e;
+  margin-top: 40px;
+}
+input {
+  display: block;
+  width: 80%;
+  max-width: 300px;
+  margin: 15px auto;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+button {
+  background: #ffcc00;
+  color: #1a1a2e;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+button:hover {
+  background: #ffdb4d;
+}
+a {
+  color: #1a1a2e;
+}

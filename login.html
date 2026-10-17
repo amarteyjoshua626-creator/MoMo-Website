@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JOSHUA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .login-box{max-width:400px; margin:80px auto; background:white; padding:30px; border-radius:12px; box-shadow:0 4px 20px rgba(0,0,0,0.05);}
+    input{width:100%; padding:14px; margin:10px 0; border:1px solid #ddd; border-radius:8px; font-size:16px;}
+  </style>
+</head>
+<body>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="login.html">Login</a>
+  <a href="payment.html">MoMo Pay</a>
+</nav>
+  <header><div class="logo">Joshua<span>.dev</span></div><div>🇬🇭 Accra</div></header>
+  <div class="login-box">
+    <h2>Welcome back</h2>
+    <p style="color:#5a6d7e; margin:10px 0 20px;">Login to your account</p>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button class="btn" style="width:100%; margin-top:10px;" onclick="doLogin()">Login</button>
+    <p style="text-align:center; margin-top:15px;"><a href="index.html">← Back to home</a></p>
+  </div>
+<script>
+function doLogin(){
+  let u = document.getElementById('username').value;
+  let p = document.getElementById('password').value;
+  if(u === "JOSHUA" && p ==="Junior@20"){
+     alert('Welcome JOSHUA! Correct password! Day 3 Complete!');
+  }  
+  else if(u && p){
+     alert('wrong password or username! Check caps - JOSHUA must be all caps');
+  }
+  else{
+     alert('Please enter username and password');
+  }
+}
+</script>
+</body>
+</html>

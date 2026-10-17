@@ -1,0 +1,33 @@
+> Delicious_Junior:
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MoMo Payment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head> 
+<body>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="login.html">Login</a>
+  <a href="payment.html">MoMo Pay</a>
+</nav>
+<h1>Pay with MoMo - Ghana</h1>
+<p>Username: JOSHUA</p>
+<input type="text" id="momoNumber" placeholder="Enter MoMo Number e.g. 054...">
+<input type="text" id="amount" placeholder="Enter Amount e.g. 50">
+<button onclick="payNow()">Pay Now</button>
+<p><a href="index.html">Back to Home</a></p>
+
+<script>
+function payNow(){
+  let number = document.getElementById('momoNumber').value;
+  let amt = document.getElementById('amount').value;
+  if(number && amt){
+    alert('MoMo request sent to ' + number + ' for GHS ' + amt + '. Waiting for approval - Day 4 Done!');
+  } else {
+    alert('Please enter MoMo number and amount');
+  }
+}
+</script>
+</body>
+</html>
